@@ -24,8 +24,8 @@ function setUserName() {
 if(!localStorage.getItem('name')) {
     setUserName();
 }else{
-    let loclName = localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'JS is so cool ' + loclName;
+    let storedName  = localStorage.getItem('name');
+    myHeading.innerHTML = 'JS is so cool ' + storedName ;
 }
 
 myButton.onclick = function() {
